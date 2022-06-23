@@ -1,43 +1,83 @@
-.nav{
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    background-color: #000000;
-    height: 12vh;
-    position: fixed;
-    left: 0;
-    right: 0;
-    z-index: 22;
-    width: 1400px;
-}
-.ul{
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    list-style: none;
-}
-.li{
-    margin: 25px;
-    position: relative;
-}
-.li:before{
-    content: '';
-    width: 0;
-    height: 2px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    transition: all .4s ease;
-    background: #d00000;
-    position: absolute;
+body {
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    background: #f2f4f5;
   }
-  .li:hover:before{
+  ul {
+    list-style: none;
+  }
+  a:hover {
+    text-decoration: none !important;
+  }
+  
+  .navbarnav {
+    background-color: #002f34;
+    position: fixed;
     width: 100%;
   }
-.a{
+  .footer{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .navbarul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1174px;
+    margin: auto;
+    z-index: 11 !important;
+  }
+  .alt{
+    margin-bottom: 50px;
+  }
+  nav{
+    z-index: 10000;
+  }
+  .navbarli {
+    list-style: none;
+    padding: 14px
+  }
+  .navbara {
     text-decoration: none;
     color: white;
-}
+    transition: all .3s ease;
+  }
+  .navbara:hover {
+    color: #7f9799;
+  }
+  .navlogo {
+    width: 90px;
+    height: 80px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+  li:first-child {
+    padding: 0px;
+    margin-right: auto;
+  }
+  #icon {
+    padding-right: 7px;
+  }
+  #icon:hover {
+    color: #7f9799;
+  }
+  .pod {
+    border: 4px solid white;
+    color: #002f34;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    transition: all .3s ease;
+    text-decoration: none;
+  }
+  .pod:hover {
+    background: #002f34;
+    color: white;
+  }
+  .navlip {
+    cursor: default;
+    color: #7f9799;
+  }
 *{
     padding: 0;
     margin: 0;
@@ -328,6 +368,31 @@ video {
     padding-top: 20px;
     color: #fff;
 }
+.dowload {
+  text-align: center;
+  margin-left: 50px;
+ }
+ .afooter {
+ text-decoration: none;
+  color: black;
+ }
+ .bfooter {
+  display: block;
+  margin-left: 40px;
+  margin-bottom: 10px;
+ }
+ .pfooter {
+  display: flex;
+
+ }
+ .imga {
+  margin-right: 10px;
+ }
+ .footerp {
+  text-align: center;
+  color: #8E8E8E;
+ }
+
 .tugma{
     margin-top: 50px;
     text-align: center;
@@ -514,43 +579,56 @@ footer{
         text-align: center;
         padding-bottom: 20px;
     }
-    .nav{
-        flex-wrap: wrap;
-        width: 100% !important;
-    }
-    .c2{
-        padding: 0px 4px;
-        font-size: 30px;
-          animation: bla 3s infinite;
-    }
-    @keyframes bla{
-        0%{
-          transform: scale(1);
-        }
-        25%{
-          transform: scale(.7);
-        }
-        50%{
-          transform: scale(1.4);
-        }
-        75%{
-          transform: scale(.7);
-        }
-        100%{
-          transform: scale(1);
-        }
+   
+    .navbarnav {
+        width: 1000px!important;
+        z-index: 22;
       }
-      .ul{
-        display: none;
-        background: #000000;
-      }
-      .c1{
-        background-color: #fff;
-        align-items: center;
+      
+      .navbarul {
+        display: flex;
         justify-content: center;
+        align-items: center;
+        margin: auto;
       }
-      .c3{
-        margin-left: unset;
+      
+      i {
+        margin: 0px!important;
       }
-    
-}
+      .navbarli {
+        padding: 5px!important;
+      }
+      
+      
+      li:first-child {
+        padding: 0px;
+        margin-left: 0px;
+        margin-right: 0px!important;
+      }
+      .navli {
+        margin-left: auto;
+      }
+      
+      ul {
+        padding: 0px!important;
+        margin: 0px!important;
+        display: flex;
+        justify-content: flex-start!important;
+      }
+      
+      nav {
+        padding: 0px!important;
+      }
+      nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .pod {
+      display: none;
+      }
+      .pfooter {
+        flex-wrap: wrap;
+      }
+
+      }
